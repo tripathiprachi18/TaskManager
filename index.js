@@ -120,7 +120,7 @@ function saveTheEditedValue(btnFun, child, des, mainDiv, input1, input2, conditi
     btnFun.addEventListener('click', (e) => {
         e.stopPropagation();
         if (condition === "save") {
-            child = input1.value;
+            child.innerText = input1.value;
             des.innerText = input2.value;
             mainDiv.remove();
         } else {
